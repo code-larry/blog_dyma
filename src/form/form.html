@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="./index.html" class="header-brand">Blog</a>
+			<div class="header-menu">
+				<ul>
+					<li>
+						<a href="./index.html" class="header-nav">Accueil</a>
+					</li>
+					<li>
+						<a href="./form.html" class="header-nav active">Créer un article</a>
+					</li>
+				</ul>
+				<div class="header-menu-icon">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+		</header>
+
+		<div class="content">
+			<form>
+				<h2 class="title-underline">Ajouter un article</h2>
+				<div class="form-group">
+					<label for="">Auteur</label>
+					<input type="text" name="author">
+				</div>
+				<div class="form-group">
+					<label for="">Image de profil</label>
+					<input type="text" name="img">
+				</div>
+				<div class="form-group">
+					<label for="">Catégorie</label>
+					<input type="text" name="category">
+				</div>
+				<div class="form-group">
+					<label for="">Titre</label>
+					<input type="text" name="title">
+				</div>
+				<div class="form-group">
+					<label for="">Article</label>
+					<textarea name="content"></textarea>
+				</div>
+				<ul class="text-error" id="errors"></ul>
+				<div class="form-btn-container">
+					<button class="btn btn-secondary">Annuler</button>
+					<button class="btn btn-primary">Sauvegarder</button>
+				</div>
+			</form>
+		</div>
+
+		<footer>© Blog</footer>
+	</div>
+</body>
+</html>
